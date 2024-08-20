@@ -2,4 +2,6 @@ FROM chirpstack/chirpstack:4.9
 
 COPY ./config/* /etc/chirpstack
 
-ENTRYPOINT ["/usr/bin/chirpstack", "-c", "/etc/chirpstack"]
+RUN ls /etc/chirpstack
+
+CMD ["-c", "/etc/chirpstack"]
