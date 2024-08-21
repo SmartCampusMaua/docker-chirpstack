@@ -1,7 +1,4 @@
-FROM chirpstack/chirpstack:4.9
+FROM chirpstack/chirpstack-rest-api:4.9
 
-COPY config /etc/chirpstack
+CMD ["--server", "10.33.133.11:8080", "--bind", "0.0.0.0:8090", "--insecure"]
 
-RUN ls /etc/chirpstack
-
-CMD ["-c", "/etc/chirpstack"]
