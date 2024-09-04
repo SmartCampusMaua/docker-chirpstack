@@ -52,7 +52,7 @@
   #
   # Set this to true when the provided URLs are pointing to a Redis Cluster
   # instance.
-  cluster=false
+  cluster=true
 
 
 # Network related configuration.
